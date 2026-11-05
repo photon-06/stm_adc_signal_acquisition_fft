@@ -1,6 +1,6 @@
-\# 操作指南
+# 操作指南
 
-\## L0：CubeMX点灯 + 串口输出Hello
+## L0：CubeMX点灯 + 串口输出Hello
 
 1\. CubeMX配置：开启GPIO（LED）、USART1，配置时钟，生成Keil工程
 
