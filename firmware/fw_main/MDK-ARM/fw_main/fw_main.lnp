@@ -4,7 +4,8 @@
 "fw_main\stm32f1xx_it.o"
 "fw_main\stm32f1xx_hal_msp.o"
 "fw_main\stm32f1xx_hal_gpio_ex.o"
-"fw_main\stm32f1xx_hal_uart.o"
+"fw_main\stm32f1xx_hal_adc.o"
+"fw_main\stm32f1xx_hal_adc_ex.o"
 "fw_main\stm32f1xx_hal.o"
 "fw_main\stm32f1xx_hal_rcc.o"
 "fw_main\stm32f1xx_hal_rcc_ex.o"
@@ -15,6 +16,7 @@
 "fw_main\stm32f1xx_hal_flash.o"
 "fw_main\stm32f1xx_hal_flash_ex.o"
 "fw_main\stm32f1xx_hal_exti.o"
+"fw_main\stm32f1xx_hal_uart.o"
 "fw_main\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "fw_main\fw_main.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

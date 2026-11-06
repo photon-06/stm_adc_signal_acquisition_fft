@@ -1,8 +1,10 @@
-# Keil MDK 编译文件夹
-Objects/
-Listings/
+# Keil MDK 编译文件夹（**/ 表示匹配任意深层目录）
+**/Objects/
+**/Listings/
+**/DebugConfig/
+**/RTE/
 
-# Keil 工程相关文件
+# Keil 工程相关文件后缀
 *.uvguix.*
 *.uvopt
 *.bak
@@ -20,16 +22,16 @@ Listings/
 *.fd1
 *.sct
 *.scr
+*.icf
 
-# CubeMX缓存
-.MXproject/
+# CubeMX 缓存（去掉斜杠，精准匹配文件）
+.MXproject
 cubemx.lock
 
-# Python缓存
+# Python 缓存
 __pycache__/
 *.pyc
 
 # 系统垃圾
-*.log
 .DS_Store
 Thumbs.db
