@@ -28,7 +28,7 @@ STM32信号采集 + Python FFT频谱分析项目
 * doc：接线图、说明文档
 * plan.md：项目进度打卡
 * bug\_sheet.md：调试bug记录
-* learning\_notes.md：学习笔记
+* learning\_notes：学习笔记
 
 
 
