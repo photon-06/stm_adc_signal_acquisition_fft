@@ -23,6 +23,7 @@
 *.sct
 *.scr
 *.icf
+*.build_log.htm
 
 # CubeMX 缓存（去掉斜杠，精准匹配文件）
 .MXproject

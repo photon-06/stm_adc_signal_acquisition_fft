@@ -16,6 +16,8 @@
 "fw_main\stm32f1xx_hal_flash.o"
 "fw_main\stm32f1xx_hal_flash_ex.o"
 "fw_main\stm32f1xx_hal_exti.o"
+"fw_main\stm32f1xx_hal_tim.o"
+"fw_main\stm32f1xx_hal_tim_ex.o"
 "fw_main\stm32f1xx_hal_uart.o"
 "fw_main\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "fw_main\fw_main.sct"

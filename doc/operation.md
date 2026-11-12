@@ -29,3 +29,19 @@
 
 !\[L1：ADC单通道采集 整体接线图](circuit/l1\_circuit.jpg)
 
+\---
+
+## L2：定时采集 + 连续数据流
+
+1. CubeMX配置：
+
+   * 开启TIM2：Prescaler填7199，Counter Period填99（10ms定时）。
+   * NVIC Settings勾选TIM2 global interrupt。
+   * ADC1的Continuous Conversion Mode改为Disable。
+2. Keil代码：
+
+   * BEGIN 2：启动 HAL\_TIM\_Base\_Start\_IT(\&htim2);
+   * BEGIN 3：保持清空。
+   * BEGIN 4：编写 HAL\_TIM\_PeriodElapsedCallback，在中断中读取ADC，拆分为高低8位，加帧头0xAA和异或校验，通过 HAL\_UART\_Transmit 发送4字节数组。
+3. 验证：串口助手勾选“16进制显示”，观察到 AA XX XX XX 格式的稳定数据帧连续刷屏。
+
